@@ -1,0 +1,93 @@
+{
+  "title": "Resoom",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Resoom",
+        "description": "Connect your Resoom account. Immediate settings can start immediate ventilation and replace smart or scheduled operation.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Resoom",
+        "description": "Enter the password for the existing account.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Authentication failed. Check the account password.",
+      "cannot_connect": "Unable to connect to Resoom.",
+      "invalid_response": "The Resoom response format was not recognized."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Authentication updated."
+    }
+  },
+  "entity": {
+    "fan": {
+      "power": {
+        "name": "Power"
+      }
+    },
+    "number": {
+      "speed": {
+        "name": "Immediate speed setting"
+      }
+    },
+    "select": {
+      "pressure": {
+        "name": "Immediate pressure setting",
+        "state": {
+          "positive": "Positive pressure",
+          "balanced": "Balanced pressure",
+          "negative": "Negative pressure"
+        }
+      }
+    },
+    "switch": {
+      "cutoff": {
+        "name": "Immediate automatic cutoff setting"
+      },
+      "intake": {
+        "name": "Immediate intake fan setting"
+      },
+      "exhaust": {
+        "name": "Immediate exhaust fan setting"
+      },
+      "sleep": {
+        "name": "Immediate sleep setting"
+      },
+      "bypass": {
+        "name": "Immediate bypass setting"
+      }
+    },
+    "sensor": {
+      "reported_speed": {
+        "name": "Reported speed step"
+      },
+      "mode": {
+        "name": "Reported operating mode",
+        "state": {
+          "sensing": "Sensing",
+          "smart": "Smart",
+          "immediate": "Immediate ventilation",
+          "ventilation_standby": "Ventilation standby",
+          "cutoff": "Emergency cutoff",
+          "reservation": "Scheduled",
+          "stopped": "Stopped"
+        }
+      },
+      "filter": {
+        "name": "Filter remaining capacity"
+      },
+      "element": {
+        "name": "Heat exchange element remaining capacity"
+      }
+    }
+  }
+}

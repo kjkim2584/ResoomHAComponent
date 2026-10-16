@@ -1,0 +1,93 @@
+{
+  "title": "Resoom",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Resoom 연결",
+        "description": "Resoom 계정을 연결합니다. 즉시 운전 설정을 변경하면 즉시 환기가 시작되거나 스마트·예약 운전이 전환될 수 있습니다.",
+        "data": {
+          "username": "이메일",
+          "password": "비밀번호"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Resoom 재연결",
+        "description": "기존 계정의 비밀번호를 입력하세요.",
+        "data": {
+          "password": "비밀번호"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "인증에 실패했습니다. 계정 비밀번호를 확인하세요.",
+      "cannot_connect": "Resoom 서버에 연결할 수 없습니다.",
+      "invalid_response": "Resoom 서버 응답 형식을 인식할 수 없습니다."
+    },
+    "abort": {
+      "already_configured": "이미 등록된 계정입니다.",
+      "reauth_successful": "인증 정보를 갱신했습니다."
+    }
+  },
+  "entity": {
+    "fan": {
+      "power": {
+        "name": "전원"
+      }
+    },
+    "number": {
+      "speed": {
+        "name": "즉시 운전 풍량 설정"
+      }
+    },
+    "select": {
+      "pressure": {
+        "name": "즉시 운전 압력 설정",
+        "state": {
+          "positive": "양압운전",
+          "balanced": "정압운전",
+          "negative": "음압운전"
+        }
+      }
+    },
+    "switch": {
+      "cutoff": {
+        "name": "즉시 운전 자동 긴급차단 설정"
+      },
+      "intake": {
+        "name": "즉시 운전 급기 팬 설정"
+      },
+      "exhaust": {
+        "name": "즉시 운전 배기 팬 설정"
+      },
+      "sleep": {
+        "name": "즉시 운전 수면 설정"
+      },
+      "bypass": {
+        "name": "즉시 운전 바이패스 설정"
+      }
+    },
+    "sensor": {
+      "reported_speed": {
+        "name": "보고 풍량 단계"
+      },
+      "mode": {
+        "name": "보고 운전 모드",
+        "state": {
+          "sensing": "센서 작동 중",
+          "smart": "스마트 모드",
+          "immediate": "즉시 환기 모드",
+          "ventilation_standby": "환기 대기 중",
+          "cutoff": "긴급 차단 중",
+          "reservation": "예약 모드",
+          "stopped": "정지"
+        }
+      },
+      "filter": {
+        "name": "필터 잔여량"
+      },
+      "element": {
+        "name": "전열소자 잔여량"
+      }
+    }
+  }
+}
